@@ -1,0 +1,34 @@
+b1: Phân tích web( nhìn giao diện mẫu để làm theo)
+-- tìm ra những thành phần của website đó --OK
+ 1. header
+ 2. slider
+ 3. content
+	3.1 giới thiệu (about)
+	3.2 Tour
+	3.3 contact
+	3.4 image
+	3.5 footer
+ 4. footer
+b2: Xây dựng móng
+b3: Xây dựng từng phần theo phân tích
+b4: Hoàn thiện
+
+
+
+
+Những thành phần thường gặp trên một website
+
+1. Header(đầu trang)
+2. Navigation(điều hướng)
+3. Breadcrumb (chỉ điểm)
+4. Sidebar(thanh bên trái hay bên phải màn hình)
+5. Sliler( dạng trượt ảnh, nội dung,...)
+6. Content (nội dung chính)
+7. banner( ảnh đặt ở một vị trí quảng cáo)
+8. Footer( chân trang)
+
+
+Bước 1:  Phân tích giao diện web
+
+
+--- tạo class ban đầu bằng js- để biết có xử lý javascripts
