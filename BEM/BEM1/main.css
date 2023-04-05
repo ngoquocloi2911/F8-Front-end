@@ -1,0 +1,84 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: "Helvetica Neue";
+    background-color: #f4f4f5;
+  }
+  
+  /* Thuộc tính giúp căn giữa    */
+  body > div {
+    margin: auto;
+  }
+  
+  /* ======= Buttons ======== */
+  
+  /* Block */
+  .btn {
+    padding: 16px;
+    border-radius: 10px;
+    border: none;
+    min-width: 150PX;
+    color: #fff;
+    
+    
+  }
+  .btn:hover{
+    opacity: 0.6;
+    cursor: pointer;
+  }
+  
+  /* Modifier */
+  .btn--success{
+    background-color: #71be34;
+  }
+
+  .btn--infor{
+    background-color: #c7c119;
+  }
+
+  .btn--error{
+    background-color: #cc1c1c;
+
+  }
+
+  .btn--dissable{
+    opacity: 0.5 !important;
+    /* loại bỏ thao tác khi hover vào */
+    pointer-events: none;
+  }
+
+  .btn-size-s {
+    padding: 7px;
+  }
+
+  .btn-size-m{
+    padding: 15px;
+  }
+
+  .btn-size-l{
+    padding: 25px;
+  }
+
+  
+
+
+  
+  
+  /* tạo khoảng cách giữa các nút chung với nhau */
+  .btn + .btn{
+    margin-left: 15px;
+  }
+  
+  
+  /* cách đặt tên modifier thể hiện sự thành công */
+  
+  
+  /*  */
+  

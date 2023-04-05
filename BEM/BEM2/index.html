@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <!-- Đưa file icon vào web -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script type="text/javascript" src="file.js"></script>
+    <title>BEM</title>
+</head>
+<body>
+    <!-- Success -->
+    <div id="toast">
+        <!-- <div class="toast toast--success">
+            <div class="toast__icon">
+                <i class="fa-sharp fa-solid fa-circle-check"></i>
+            </div>
+            <div class="toast__body">
+                <h3 class="toast__title">Success</h3>
+                <p class="toast__msg">Các bạn subscribe kênh Youtube F8 Official để nhận thông báo khi có các bài học mới nhé ❤️</p>
+            </div>
+            <div class="toast_close">
+                <i class="fa-sharp fa-solid fa-rectangle-xmark"></i>
+            </div>
+        </div> -->
+    </div>
+
+    <div>
+        <!-- 2 nút khi click vào  có hàm khi click vào -->
+    <button onclick="showSuccessToast();" class="btn btn--success  ">Show success toast</button>
+      <button onclick="showErrorToast();" class="btn btn--error ">Show errorr toast</button>
+    </div>
+
+    <script>
+
+        
+
+        // Hàm kích vào hiện ra
+       function showSuccessToast(){
+        toast({
+            title: 'Thành công',
+            message: 'Bạn đã đăng ký thành công chương trình',
+            type: 'success',
+            duration: 5000
+        });
+
+       }
+
+        // Hàm kích vào hiện ra
+       function showErrorToast(){
+        toast({
+            title: 'Thất bại!',
+            message: 'Có lỗi xảy ra vui lòng thử lại',
+            type: 'error',
+            duration: 5000
+        });
+
+       }
+       
+    </script>
+</body>
+</html>
