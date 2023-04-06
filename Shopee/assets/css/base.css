@@ -1,0 +1,64 @@
+:root {
+    --primary-color: #ee4d2d;
+    --white-color: #fff;
+    --black-color: #000;
+    /* màu đọc chữ đỡ mỏi mắt */
+    --text-color:   #333;
+}
+
+*{
+    /* Thuộc tính inherit kế thừa từ cha của nó ( thẻ html) */
+    box-sizing: inherit;
+
+}
+
+html{
+    /* cứ 1 rem tương ứng với 10px(dễ quy đổi) -- 100% tương ứng với 1.6rem */
+    font-size: 62.5%;
+    /* khi padding,border sẽ không làm thay đổi kích thước mặc định */
+    box-sizing: border-box;
+    /* (tương ứng 16px) */
+    line-height: 1.6rem;
+    /* font chữ không chân */
+    font-family: 'Roboto', sans-serif;
+
+}
+
+/* Chuẩn bị cho responsive */
+
+.grid {
+    width: 1200px;
+    /* khi kích thước nhỏ hơn 1200px thì tự động thành 100% kích thước mặt định */
+    max-width: 100%;
+    /* căn giữa khối này khi nằm trong khối khác */
+    margin: 0 auto;
+}
+
+.grid__row{
+    /* chuyển các khối nằm ngang */
+    display: flex;
+    /* khi các khối vượt qua tự động nhảy xuống hàng */
+    flex-wrap: wrap;
+}
+
+/* amination  */
+
+@keyframes inFad{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes headerNotifyGrowth{
+    from{
+        opacity: 0;
+        transform: scale(0);
+    }
+    to{
+        opacity: 1;
+        transform: scale(1);
+    }
+}

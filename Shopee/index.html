@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- reset css bằng cách nhúng file này vào -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- Nhúng font chữ boboto vào -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.4.0-web/css/all.min.css">
+</head>
+<body>
+    <div id="app">
+
+        <header id="header">
+            <div class="header__navbar grid"> 
+                <ul class="header__navbar-list  ">
+                    <li class="header__navbar-item header__navbar-item--separa">
+                        <a href="#" class="header__navbar-item-link  ">
+                            Kênh Người Bán
+                        </a>
+                    </li>
+                    <li class="header__navbar-item header__navbar-item--separa">
+                        <a href="#" class="header__navbar-item-link">
+                            Trở Thành Người bán Shopee
+                        </a>
+                    </li>
+                        
+                    <li class="header__navbar-item header__navbar-item--separa header__navbar-list--has-qr">
+                        <a href="" class="header__navbar-item-link">
+                        Tải ứng dụng 
+                        </a>
+                        <div class="header__qrcode">
+                            <img src="./assets/img/qrcode.png" alt="QR code" class="header__qrcode-img">
+                            <div class="header__qrcode-apps">
+                                <a href="" class="header__qrcode-link">
+                                    <img src="./assets/img/app_store.png" alt="app store" class="header__qrcode-dowload"></a>
+                                
+                                    <a href="" class="header__qrcode-link">
+                                        <img src="./assets/img/ch_play.png" alt="app store" class="header__qrcode-dowload"></a>
+                            </div>
+                        </div>
+                        
+                    </li>
+
+                    <li class="header__navbar-item"> <span class="header__navbar-item--disable">Kết Nối</span>   
+                        <a href="" class="header__navbar-item-link">
+                            <i class="header__navbar-link-icon fa-brands fa-facebook"></i>
+                        </a>
+                        
+                        <a href="" class="header__navbar-item-link">
+                            <i class="header__navbar-link-icon fa-brands fa-square-instagram"></i>
+                        </a>
+                        
+                    </li>
+                </ul>
+                <ul class="header__navbar-list">
+                    <li class="header__navbar-item header__navbar-item--has-notify ">
+                        <a href="#" class="header__navbar-item-link">
+                            <i class="header__navbar-link-icon fa-solid fa-bell"></i>
+                            Thông Báo
+                        </a>
+                        <div class="header__notify">
+                            <div class="header__notify-header">
+                                <h3 class="header__notify-heading"> Thông Báo Mới Nhận</h3>
+                            </div>
+                            <ul class="header__notify-list">
+                                <li class="header__notify-items header__notify-item--viewed">
+                                    <a href="#" class="header__notify-link">
+                                        <img src="./assets/img/anh-gai-xinh-cuc-dep.jpg" alt="" class="header__notify-img">
+                                    <div class="header__notify-infor">
+                                        <span class="header__notify-name">Xác thực chính hãng nguồn gốc các sản phẩm Ohui</span>
+                                        <span class="header__notify-describe">HiddenTag là giải pháp xác thực hàng chính hãng bằng công nghệ tiên tiến nhất hiện nay.</span>
+                                    </div>
+                                    </a>
+                                    
+                                </li>
+                            </ul>
+
+                            <ul class="header__notify-list">
+                                <li class="header__notify-items header__notify-item--viewed">
+                                    <a href="#" class="header__notify-link">
+                                        <img src="./assets/img/anh-gai-xinh-vn-2.jpg" alt="" class="header__notify-img">
+                                    <div class="header__notify-infor">
+                                        <span class="header__notify-name">Sale Sốc bộ dưỡng Ohui The First Tái tạo trẻ hóa da SALE OFF 70%</span>
+                                        <span class="header__notify-describe">Giá chỉ còn 375.000 (giá gốc: 1.250.000 vnd).</span>
+                                    </div>
+                                    </a>
+                                    
+                                </li>
+                            </ul>
+
+                            <ul class="header__notify-list">
+                                <li class="header__notify-items header__notify-item--viewed">
+                                    <a href="#" class="header__notify-link">
+                                        <img src="./assets/img/hinh-co-gai-xinh-dep-005.jpg" alt="" class="header__notify-img">
+                                    <div class="header__notify-infor">
+                                        <span class="header__notify-name">Ohui chính thức ra mắt dòng son lì mới THE FIRST GENITURE LIPSTICK</span>
+                                        <span class="header__notify-describe">Một làn môi căng mềm, quyến rũ với sắc màu nổi bật luôn là điều mà các quý cô ao ước.</span>
+                                    </div>
+                                    </a>
+                                    
+                                </li>
+                            </ul>
+                            <div class="header__notify-footer">
+                                <a href="#" class="header__notify-footer-link">Xem tất cả</a>
+                            </div>
+                        </div>
+                        
+                    </li>
+                    <li class="header__navbar-item">
+                        <a href="#" class="header__navbar-item-link">
+                            <i class="header__navbar-link-icon fa-regular fa-circle-question"></i>
+
+                            Hỗ Trợ
+                        </a>
+                    </li>
+                    <li class="header__navbar-item">
+                        <a href="#" class="header__navbar-item-link">
+                            <i class="header__navbar-link-icon fa-solid fa-earth-oceania"></i>
+                            Tiếng Việt
+                            <i class="header__navbar-link-icon fa-solid fa-chevron-down"></i>
+                        </a>
+                    </li>
+                    <li class="header__navbar-item header__navbar-item--separa">
+                        <a href="#" class="header__navbar-item-link  header__navbar-item-link--strong ">
+                            Đăng Ký
+                        </a>
+                    </li>
+                    <li class="header__navbar-item">
+                        <a href="#" class="header__navbar-item-link header__navbar-item-link--strong">
+                            Đăng Nhập
+                        </a>
+                    </li>
+                </ul>
+
+
+            </div>
+
+        </header>
+
+        <div id="container">
+
+        </div>
+
+        <footer id="footer">
+
+        </footer>
+    </div>
+        
+
+    </h1>
+</body>
+</html>

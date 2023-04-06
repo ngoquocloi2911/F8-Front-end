@@ -1,0 +1,119 @@
+b1: tạo file 
+
+b2: resest css (chạy file: https://cdnjs.com/libraries/normalize)
+	-- nhúng file vào đường link trên web
+
+b3: Dựng base CSS
+	+ Khai báo các biến màu hay dùng
+	+ Gán font-size mặc định: 62.5% ( tương ứng 10px là 1rem)
+	+ Độ cao mặc định của chữ(line-height)
+	+ nhúng font chữ từ google vào(google roboto fonts)
+	+ sử dụng thuộc tính box-sizing: để khi padding, boder không làm thay đổi kích thước của trình duyệt
+	+ Chuyển bị trước class grid(responsive) gồm các thuộc tính{
+	
+	witdh:1200px, max-width:100% , margin: 0 auto(căn giữa khối này khi nằm trong khối khác)
+	.grid__row : display: flex ( thành hàng ngang) , flex-wrap: wrap( tự động xuống hàng khi khối quá lớn) 	
+}
+
+b4: dựng khung web shoppe
+ -- làm từ ngoài vào -- từ trên xuống
++ thẻ div chứa toàn bộ<app>
+ +<header>
+  +<header__navbar>
+   +<ul -list>
+    +<li -item>
+    +<li -item>
+   +<ul -list>
+    +<li *4 item>
+     +<a *4 item-link>
+ +<container>
+ +<footer>
+==> Làm tới đâu dựng tới đó ( dựng khung xong dựng header trước)
+
+
+*****(header)******8
+b5: Navbar CSS(header)
+ - Back-ground-img: linear -gradie (0 , màu trên, màu dưới) -- màu chuyển
+ -tính chất khối của các thẻ(đi từ ngoài vào)
+ - tính kế thừa từ khối trên -- không cần đặt chiều ngang -- chỉ cần đặt chiều cao (height)
+ - sử dụng thuôc tính display: inline-block để lên cùng 1 hàng ( 
+ - mặc định thẻ ul có padding-left: 40px;
+ - sử dụng class - grid để tự động căn chỉnh
+ -- tạo modifier để tạo dấu gạch 
+
+ **** Nhúng icon *******
+-- điều chỉnh lại margin-top(4px)
+-- hover: vào các thẻ li,a (mờ đi, có hình bàn tay)
+-- nhúng icon từ fontawesome (dowload về vào thư mục của mình -- vào thư mục font)
+  + lấy icon về -- fb, instagram (kích vào được - bỏ thêm thẻ a)
+
+-- css cho các icon vừa tạo
+ -- cách đặt tên nhanh ( chọn điểm chung -- crt-d)
+ -- css font-size cho icon
+ -- căn giữa icon với chữ 
+ -- cách icon ra
+ -- xử lý phần kết nối không thể bấm được (đưa vào modifier (span))
+ -- thêm mờ icon fb,instagram
+
+ ******* Header QR code CSS
+ - lưu ảnh QR code, gg play, appstore về img
+ - đo chiều ngang của anh QR code
+ - tạo block trong li -- _header__qr
+  - tạo thẻ img class-img
+ -- tạo 1 class qr_app
+  + 2 thẻ img (download) (nằm trong 2 thẻ  a)
+ -css header__qr
+ + possition:ab
+ +witd : 186px
+ + left: 0
+ + border-radius: 2px
+ +top :100%
+ + padding: 8px
+
+ - chỉnh lại chiều cao của 2 biểu tượng download
+ - chỉnh lại chiều dài của biểu tượng down load tương ứng với với mép trên của qr code
+ - ẩn đi -- khi hover vào hiện ra(thêm class modifier vào has--qr
+ - đẩy qr xuống bớt
+ - đẩy top xuống xa quá bị mất cầu nối
+ - viết một lớp giả cho qr :before - 
+ - thêm một anmition vào file base.css(để di chuyển ảnh qr code
+
+** Header notification css ( phần thông báo)
+-- con của thẻ li thông báo
+-- đo chiều cao của khung
+-- 1 khối div - header__notify
+ +header__notify-header
+  ++ h3 ()
+ + ul (-list)
+  ++ li(item)
+   ++a(link)
+     ++img(img)
+      .div(info)
+       span(name)
+	 span(decripe )
+-- css các class
+-- xử lý ảnh vỡ bằng cách đưa vào 1 khối span
+-- làm trước 1 thằng
+-- tạo biến màu chủ đạo website (primary-color:
+thêm thẻ div(footer__notify)
+
+// đổi ảnh, nội dung
+-- footer - nên dùng display: flex
+-- viết animation cho nó headerNotifyGrowth
+ +tranform: sclale(0): lớn ra
+   sclale(1)
+ + tranform-origin: top - right (xác định được điểm bắt đầu hiện ra) 
+   -- viết 1 hàm tính toán từ tâm - 20px
+ -- ẩn đi -- hover vào mới hiện ra
+  tạo 1 class .has-notify(hover) để hover vào hiện lên
+
+ -- dấu mũi tên
+
+ -- tạo từ boder -- bỏ còn lại trong suốt còn 1 cạnh
+ -- tạo 1 lớp giả là before
+ : tạo ra 1 cạnh từ boder -- transparent (trong suốt)
+ -- tạo lớp giả để làm cầu nối 
+
+
+	
+
