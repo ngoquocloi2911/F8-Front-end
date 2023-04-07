@@ -55,7 +55,7 @@ b5: Navbar CSS(header)
  -- xử lý phần kết nối không thể bấm được (đưa vào modifier (span))
  -- thêm mờ icon fb,instagram
 
- ******* Header QR code CSS
+ ******* Header QR code CSS***************
  - lưu ảnh QR code, gg play, appstore về img
  - đo chiều ngang của anh QR code
  - tạo block trong li -- _header__qr
@@ -113,6 +113,19 @@ thêm thẻ div(footer__notify)
  -- tạo 1 lớp giả là before
  : tạo ra 1 cạnh từ boder -- transparent (trong suốt)
  -- tạo lớp giả để làm cầu nối 
+ -- sử dụng will-change ( để tối ưu chuyển động cho các chuyển động của web)
+
+********** Base modal (đăng nhập / đăng xuất)
+
+ -<modal> (css cho modal nổi trên màn hình chính full toàn bộ)
+  -<modal__overlay> (cho màu nền phủ xung quanh ( width,height 100%, màu trong suốt)
+
+   -<modal_body> (chỉnh cho khối căn giữa, có kích thước phù hợp)
+       --- sử dụng z-index để phân thứ tự trước sau của overlay, body	
+    -<modal-inter>
+ 
+  
+ ***** Dựng khung form đăng ký 
 
 
 	
