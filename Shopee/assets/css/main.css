@@ -11,6 +11,16 @@
 
 }
 
+/* tự động căn chỉnh theo grid đã có sẵn */
+.header__navbar-grid{
+    width: 1200px;
+    /* khi kích thước nhỏ hơn 1200px thì tự động thành 100% kích thước mặt định */
+    max-width: 100%;
+    /* căn giữa khối này khi nằm trong khối khác */
+    margin: 0 auto;
+
+}
+
 .header__navbar {
     display: flex;
     justify-content: space-between;
@@ -23,6 +33,8 @@
     list-style: none;
     /* điều chỉnh margin mặc định lại còn 4px(mặc định là 10px) */
     margin-top: 0.4rem;
+    display: flex;
+    align-items: center;
 }
 
 .header__navbar-list--has-qr:hover .header__qrcode{
@@ -38,10 +50,16 @@
     
 }
 
+.header__navbar-link-connect{
+    margin-left: 4px;
+}
+
+
+
 .header__navbar-item-link,
 .header__navbar-item{
     text-decoration: none;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     color: var(--white-color);
     font-weight: 350;
 }
@@ -67,6 +85,112 @@
 }
 
 
+.header__navbar-user{
+    display: flex;
+    position: relative;  
+}
+
+.header__navbar-user:hover .header__user-list{
+    display: block;
+}
+
+
+.header__navbar-user-img{
+    width: 16px;
+    height: 16px;
+    align-items: center;
+    border-radius: 50%;
+    margin-right: 10px;
+
+}
+.header__navbar-user-name{
+    font-size: 1.3rem;
+    font-weight: 400;
+    
+
+}
+
+.header__user-list{
+    position: absolute;
+    width: 150px;
+    background-color: var(--white-color);
+    list-style: none;
+    right: 0;
+    top: 100%;
+    z-index: 1;
+    padding-left: 0;
+    /* padding: 10px 0 0 16px; */
+    float: left;
+    border: 1px solid #ccc;
+    display: none;
+    border-radius: 3px;
+    animation: headerNotifyGrowth ease .2s ;
+    transform-origin: calc(100% - 20px) top;
+    box-shadow: 0 3px 2px #ccc;
+
+}
+
+
+
+.header__user-list::before{
+    content: "";
+    /* nên nhớ phải có thuộc tính absolute để di chuyển vị trí mình muốn */
+    position: absolute;
+    border-style: solid;
+    /* Tạo dấu mũi tên bằng các màu trong suốt */
+    border-color: transparent transparent var(--white-color) transparent;
+    /* tăng kích cỡ của mũi tên để cái mũi bè ra hơn */
+    border-width: 13px 18px;
+    top: -25px;
+    right: 6px;
+}
+
+
+/* làm cầu nối  */
+.header__user-list::after{
+    content: "";
+    position: absolute;
+    /* điều chỉnh vị trí mà mình cần làm cầu */
+    border-width: 10px 40px;
+    border-style: solid;
+    /* sau khi điều chỉnh xong chỉnh về màu trong suốt */
+    border-color: transparent;
+    top: -15px;
+    right: -1px;
+}
+
+
+
+
+.header__user-item{
+    padding:12px 0 16px 12px;
+
+}
+
+.header__user-item:last-child{
+    border-top:1px solid rgba(0, 0, 0, 0.2);
+}
+
+
+.header__user-item:hover{
+    background-color: #efeeee;
+    cursor: pointer;
+    
+}
+
+.header__user-item:hover .header__user-link{
+    color: var(--primary-color);
+}
+
+
+.header__user-link{
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 400;
+}
+
+
+
 /* header qr code */
 .header__qrcode{
     background-color: var(--white-color);
@@ -79,6 +203,7 @@
     display: none;
     /* hiệu ứng chuyển động */
     animation: fadIn ease-in .2s;
+    z-index: 1;
 
 }
 
@@ -163,11 +288,13 @@
     border-radius: 2px;
     /* đường viền ở bên ngoài */
     border: 1px solid rgba(0, 0, 0, 0.1);
-    transform-origin: calc(100% - 20px) top;
+    /* thuộc tính giúp di chuyển dấu mũi tên ở vị trí mình cần */
+    transform-origin: calc(100% - 34px) top;
     animation: headerNotifyGrowth ease .3s;
     /* dùng để tối ưu hóa chuyển động của các thuộc tính trong animation */
     will-change: opacity, transform;
     display: none;
+    z-index: 1;
 
 }
 
@@ -490,7 +617,744 @@
 /* gán biết để set kích thước cho nó */
 .header__with-search{
     height: var(--header-with-search-height);
+    display: flex;
+    align-items: center;
+    
 }
+
+.header__with-logo{
+    width: 200px;
+    height: auto;
+   
+
+}
+
+.header__logo-link{
+    text-decoration: none;
+    border-color: transparent;
+}
+
+.header__logo-icon{
+    width: 162px;
+    margin-left: 16px;
+
+}
+
+.header__search{
+    /* chiều dài đã là 100% nên chỉ cần mặc định chiều cao là được */
+    height: 40px;
+    background-color: var(--white-color);
+    /* mặc định sẽ chiếm khoảng không còn lại */
+    flex: 1;
+    display: flex;
+    align-items: center;
+    border-radius: 3px;
+    
+}
+
+.header__cart{
+    width: 140px;
+    text-align: center;
+}
+
+.header__cart-icon{
+    font-size: 2.4rem;
+    color: var(--white-color);
+    margin-top: 8px;
+}
+
+.header__search-input{
+    
+    height: 100%;
+    /* border: none; */
+    font-size: 1.4rem;
+    padding-left: 16px;
+    outline: none;
+    border: none;
+
+}
+
+/* Thuộc tính lớp giả focus . lưu ý khi focus có sử dụng dấu ~ để thực thi  */
+.header__search-input:focus ~ .header__history{
+    display: block;
+
+}
+
+.header__search-select{
+    border-left: 1px solid #ccc;
+    padding: 0 4px 0 12px;
+    /* Cái ngoài cố định */
+    position: relative;
+    cursor: pointer;
+    
+    
+
+}
+.header__search-select-lable{
+    font-size: 1.4rem;
+    color: var(--text-color);
+    
+
+
+}
+
+.header__search-select-icon{
+    font-size: 1.2rem;
+    padding: 0 8px;
+    color: #666;
+    
+
+}
+
+.header__search-btn{
+    height: 34px;
+    width: 60px;
+    border: none;
+    margin-right: 3px;
+    border-radius: 3px;
+    background-color: var(--primary-color);
+
+
+}
+.header__search-btn{
+    color: var(--white-color);
+    font-size: 1.4rem;
+
+}
+
+.header__search-btn:hover{
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.header__search-option{
+    /* Cái trong di chuyển được */
+    position: absolute;
+    /* mép phải bằng với cha */
+    right: 0;
+    /* Mép trên cố định */
+    top: calc(100% + 3px);
+    list-style: none;
+    border: 1px solid #ccc;
+    box-shadow: 0 1px 2px #ccc;
+    /* Bỏ padding mặc định của thẻ ul */
+    padding-left: 0;
+    display: none;
+    /* Thuộc tính di chuyển động */
+    animation: fadIn ease-in .2s;
+    border-radius: 3px;
+    
+
+}
+.header__search-option::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    top: -15px;
+    left: 1px;
+    
+}
+
+.header__search-select:hover .header__search-option {
+    display: block;
+}
+
+.header__search-items{
+    background-color: var(--white-color);
+    padding: 8px 8px 10px 14px;
+    border-radius: 3px;
+    width: 130px;
+}
+
+
+.header__search-items:hover{
+    background-color: #fafafa;
+    cursor: pointer;
+}
+
+
+
+/* Biết chắc là chỉ dùng số ít -- không muốn đặt nhiều class nên css thẳng trực tiếp vào thẻ */
+.header__search-items span{
+    font-size: 1.4rem;
+    color: var(--text-color);
+    
+
+
+
+
+}
+/* Những thẻ có cả 2 thuộc tính mới hiển thị */
+.header__search-items-active.header__search-items-icon{
+    display: inline-block;
+}
+
+/* có đặt class nhưng mà không dùng -- dùng ri cho gọn đc */
+.header__search-items i{
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    padding: 8px 12px 0 10px ;
+    display: none;
+}
+
+/* History search */
+.header__search-wrap{
+    /* thẻ chiếm phần khoảng trống còn lại */
+    flex: 1;
+    /* Giá trị chiều cao bằng chiêu cao mặc định */
+    height: 100%;
+    position: relative;
+}
+
+.header__search-input{
+    width: 100%;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.header__history{
+    position: absolute;
+    width: calc(100% - 16px);
+    background-color: var(--white-color);
+    top: calc(100% + 2px);
+    left: 0;
+    border-radius: 3px;
+    border: 1px solid #e0dddd;
+    box-shadow: 0 2px 3px #ccc;
+    display: none;
+
+    
+}
+
+.header__history-list{
+ 
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.header__history-heading{
+    margin: 8px 12px 0 12px;
+    font-size: 1.4rem;
+    color: #999999;
+    font-weight: 400;
+}
+
+.header__history-item{
+    list-style: none;
+    padding: 12px 12px;
+    margin-bottom: 0;
+    
+}
+
+.header__history-item:hover{
+    background-color: #d1d0d0;
+    cursor: pointer;
+}
+
+.header__history-item a{
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+
+/* Header cart */
+
+.header__cart{
+
+
+}
+
+.header__cart-notice{
+    position: absolute;
+    padding: 1px 7px;
+    background-color: var(--white-color);
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    line-height: 1.4rem;
+    border-radius: 10px;
+    top: 6px;
+    right: -6px;
+    border: 2px solid#eb4726;
+
+}
+
+.header__cart-wrap{
+    position: relative;
+    display: inline-block;  
+    padding: 6px;
+    cursor: pointer;
+   
+}
+
+
+.header__cart-wrap:hover .header__cart-list{
+    display: block;
+    
+    
+}
+
+
+
+.header__cart-list{
+position: absolute;
+width:  300px;
+right: -5px;
+top: 100%;
+background-color: var(--white-color);
+border: 1px solid #ebe8e8;
+box-shadow: 0 2px 2px #ccc;
+border-radius: 3px;
+display: none;
+animation: headerNotifyGrowth ease .3s ;
+transform-origin: calc(100% - 20px) top;
+cursor: auto;
+
+
+}
+
+.header__cart-list::after{
+    content: "";
+    position: absolute;
+    border-style: solid;
+    border-width: 16px 20px;
+    border-color: transparent transparent var(--white-color) transparent;
+    top: -24px;
+    right: 2px;
+    cursor: pointer;
+
+}
+
+
+.header__cart-img{
+    width: 60%;
+    text-align: center;
+    padding: 14px;
+    display: none;
+    
+}
+.header__cart-msg{
+    display: block;
+    color: var(--text-color);
+    font-size: 1.2rem;
+    font-weight: 450;
+    margin: 20px 0;
+    display: none;
+
+    
+
+}
+/* no cart */
+.header__cart-list--no-cart{
+  margin-right: auto;
+  margin-left: auto;
+   
+
+}
+.header__cart-list--no-cart .header__cart-img,
+.header__cart-list--no-cart .header__cart-msg
+{
+    display: block;
+    /* muốn căn giữa theo kiểu margin thì phải margin vào thuộc tính con */
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+/* layout cart */
+
+.header__cart-heading{
+    text-align: left;
+    margin: 8px 12px 12px 12px    ;
+    color: #9a9a9a;
+    font-size: 1.2rem;
+    font-weight: 450;
+
+}
+
+.header__cart-list-item{
+    margin: 12px 12px ;
+    list-style: none;
+    padding: 0;
+    
+
+
+}
+.header__cart-item{
+    display: flex;
+    margin-bottom: 18px;
+
+}
+.header__cart-item:hover{
+    background-color: rgba(0, 0, 0, 0.05 );
+}
+
+.header__cart-item-img{
+    width: auto;
+    height: 40px;
+    float: left;
+
+}
+.header__cart-item-infor{
+
+    padding-left: 10px;
+    width: 100%;
+
+
+    
+
+
+}
+.header__cart-item-head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    line-height: 2rem;
+    margin-top: 0;
+   
+
+}
+.header__cart-item-name{
+    font-size: 1.2rem;
+    font-weight: 450;
+    /* h3 có margin mặc định  */
+    margin: 0;
+
+}
+.header__cart-item-price{
+    color: var(--primary-color);
+    font-weight: 450;
+
+}
+.header__cart-item-multiply{
+    color: #aba9a9;
+    padding: 0 4px;
+    font-size: 1rem;
+
+
+}
+.header__cart-item-number{
+    color: #888;
+
+}
+.header__cart-item-body{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    margin-top: 0;
+
+
+}
+.header__cart-item-decription{
+    color: #888;
+
+}
+.header__cart-item-remove{
+    color: var(--text-color);
+
+}
+
+.header__cart-item-btn{
+    float: right;
+    margin: 0 8px 8px 0;
+    font-size: 1.2rem !important;
+}
+
+.header__cart-item-btn:hover{
+    opacity: 0.9;
+}
+
+
+/* app__container */
+
+#app__container{
+    background-color: #f5f5f5;
+}
+
+.category{
+    background-color: var(--white-color);
+   
+
+}
+
+.app__content{
+    padding-top: 36px;
+}
+
+.category-heading-icon{
+    padding-right: 6px;
+
+}
+
+.category-heading{
+    margin: 0;
+    padding: 12px 16px;
+    font-size: 1.4rem;
+    color: var(--text-color);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1 );
+
+}
+.category-list{
+    list-style: none;
+    font-size: 1.4rem;
+    /* bỏ đi thuộc tính padding-left mặc định của thẻ ul */
+    padding-left: 0;
+    
+}
+
+.category-item--active .category-link{
+    color: var(--primary-color);
+    
+    
+}
+
+/* thuộc tính có cả 2 class mới hiệu nghiệm */
+.category-item--active .category-link::before{
+    content: "";
+    position: absolute;
+    border: 4px solid;
+    border-color: transparent transparent transparent var(--primary-color);
+    top: 50%;
+    left: -6px;
+    transform: translateY(-50%);
+
+}
+
+.category-item{
+    padding: 8px 24px;
+    
+    
+}
+
+/* css vào người con cuối cùng của thẻ li */
+.category-item:last-child{
+    padding-bottom: 20px;
+}
+
+
+.category-link{
+    position: relative;
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 450;
+    display: block;
+    transition: right  linear .2s;
+    right: 0;
+
+}
+
+.category-link:hover{
+    color: var(--primary-color);
+    right: -4px;
+}
+
+
+/* home-filter */
+
+.home-filter{
+    background-color: rgba(0, 0, 0, 0.05 );
+    display: flex;
+    align-items: center;
+}
+
+.home-filter-lable{
+    font-size: 1.4rem;
+    padding: 14px;
+}
+
+.home-filter-lable-btn{
+    margin-right: 12px;
+    /* chơi lầy :)) */
+    min-width: 90px !important;
+    
+}
+
+.home-select-lable{
+    font-size: 1.3rem;
+    color: var(--text-color);
+    font-weight: 500;
+}
+
+.home-filter__page{
+    display: flex;
+    /* Muốn đẩy hẳn sang phải */
+    margin-left: auto;
+    align-items: center;
+    padding-right: 18px;
+    
+}
+.hom-filter__num{
+    padding: 0 18px;
+    font-size: 1.4rem;
+}
+
+.home-filter--current{
+    color: var(--primary-color);
+
+}
+
+.home-page-control{
+    width: 64px;
+    background-color: var(--white-color);
+    height: 32px;
+    display: flex;
+    
+
+
+}
+
+.home-page-link{  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* chia khoảng cách thành 2 phần bằng nhau */
+    flex: 1;
+    text-decoration: none;
+
+}
+
+.home-page-link:first-child{
+    border-right: 2px solid #eeec;
+}
+
+
+
+
+.home-page-icon{
+    font-size: 1rem;
+    color: var(--text-color);
+
+}
+
+.home-page-link-disable i{
+    cursor: default;
+    color: #b0aeae;
+   
+}
+.home-page-link-disable{
+    background-color: #e8e2e2;
+    cursor: default;
+}
+
+
+/* produt -- item */
+
+
+.home-product{
+    margin-top: 20px;
+}
+.home-product-item{
+    background-color: var(--white-color);
+    
+}
+.home-product-img{
+    /* bằng với kích thước với thằng chứa nó */
+    padding-top: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+
+}
+.home-product-heading{
+    font-size: 1.4rem;
+    color: var(--text-color);
+    margin: 12px 8px 2px 8px;
+    line-height: 1.8rem;
+    /* set chiểu ngang chỉ còn lại 2 dòng */
+    height: 3.6rem;
+    /* ẩn những thuộc tính chồi ra ngoài */
+    overflow: hidden;
+    /* tạo lại thành khối */
+    display: block;
+    /* chỉ chạy trên những core có webkit-box */
+    display: -webkit-box;
+    /* điều chỉnh theo chiều dọc */
+    -webkit-box-orient: vertical;
+    /* nếu chạy quá thì sẽ hiện thị dấu 3.. ở dòng thứ 2 */
+    -webkit-line-clamp: 2;
+    /* hành xử khi bị vượt quá là thêm dấu ... */
+    /* text-overflow: ellipsis; */
+    /* thuộc tính chạy quá nhưng chỉ được trong 1 dòng */
+    /* white-space: nowrap; */
+    
+
+}
+.home-product-price{
+    display: flex;
+    align-items: center;
+
+}
+.home-product-old{
+    font-size: 1rem;
+    color: #666;
+    padding: 0 12px;
+    text-decoration: line-through;
+
+}
+.home-product-current{
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    font-weight: 500;
+    padding-left: 12px;
+
+}
+
+.home-product-item-action{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4px 12px;
+
+}
+.home-product-item-like{
+    color: var(--primary-color);
+    font-size: 1.2rem;
+
+}
+.home-product-item-rating{
+
+    color:#ffce3e;
+    font-size: 1.2rem;
+
+}
+.home-product-item-origin{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4px 12px;
+    color: #777676;
+    font-size: 1.1rem;
+
+}
+.home-product-item-brand{
+
+
+}
+.home-product-item-name{
+
+}
+.home-product-item-favourite{
+
+}
+.home-product-item-sale-off{
+
+}
+
+.home-product-item-sale-off-percent{
+
+}
+.home-product-item-sale-off-lable{
+
+}
+
+
+
+
 
 
 
