@@ -1,0 +1,99 @@
+*** Dựng khung
+layout -- dạng 12 cột
+tính kích thước của một colum -- tương ứng với kích thước trình duyệt
+(100% / 12) (
+
+* Đánh dấu phần responsive
+
+<nav.category>
+ h3.heading <ul>-<li>-a
+active
+******* Css cho nó
+grid(ngoài cùng)
+tạo 1 .grid_row (mr left - right -12px
+	.grid__colum-2 (pd left - right 12px
+
+
+..grid__colum-10
+
+****CSS Danh mục
+--app container
+-- màu nền
+category
+ -- màu 
+tranimation right - 0 -->-4
+
+** Dựng khung sắp sếp sản phẩm
+.home-filter
+ <span(lable)
+ button(btn)
+-- sửa thuộc tính btn thành inline-block
+
+.select-input
+ lable -- icon
+
+home-filter__page
+ span-num -- current   /14
+.page-control -a
+
+*** CS cho nó
+
+********* Dựng khung sản phẩm*****************
+
+.home-product
+ .row -.comlumn-2 -item - img -h5
+ .price -- old -- current
+ 
+*** CSS khung sản phẩm******
+
+xung đột nơi comlumn 2 ( đổi thành 2.4( chia tỉ lệ thành 20%
+sửa khoảng cách nhỏ lại còn 5px
+
+** điều chỉnh sao cho giá vượt quá sẽ xuống dòng
+-- điều chỉnh xuống dòng sao cho hợp lý
+-- xử lý t/hợp thả tim là màu đỏ ( thêm bớt class --)
+-- sử dụng thuộc tính zoom (1,2) or thuộc tính tranfont: scale(0.7)
+-- css cho những ngôi sao có màu vàng ( 4 ông đầu tiên)
+-- đặt lại biến là --start-gold-color
+--thêm 1 span(sold)
+-- margin vào chữ đã bán
+-- kiểm tra lại khoảng cách giữa các chữ
+
+-- CSS nhãn yêu thích
+
+-- làm mũi tên chéo 
+ -- boder-top: 20px
+ -- boder-left: 20px
+
+ back-group currentcolor(ăn theo màu hiện tại của thẻ)
+filter: brightness(giảm độ sáng
+
+**** css nhãn giảm giá
+ -- with(40px) (heght 36px) -- (lấy lại màu rgba(màu trong suốt)
+
+-- làm vạc cờ
+-- cắt nữa trên border(bỏ border top đi)
+-- đổi trong suốt - cùng màu -- chỉnh lại kích thước
+
+*** Hoàn thiện phần sản phẩm 
+-- khi di vào thì phải thêm 1 cái animation
+-- coppy ra nhiều item
+
+--- box shadow(0 0.625rem 0.0125rem 0 rgba (.1)
+
+******************* Fix ui code
+
+-- sử dụng z-index để fix lỗi viền ()
+-- fix - các thanh đổ dính lên trên nhiều quá
+-- fix history-
+-- trong shop
+-- cart-shop (+cart quality) -- giới hạn độ cao của list- item (sử dungjvh)
+-- cart-item-name-limit (giới hạn chiều cao = line heigt) -- tạo dấu (...)
+
+-- QR code
+
+-- category-style:(danh mục)
+
+--boder-radius
+
+		

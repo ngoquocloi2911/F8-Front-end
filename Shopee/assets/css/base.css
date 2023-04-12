@@ -7,6 +7,7 @@
     --border-color: #dbdbdb;
     --header-height: 120px;
     --navar-height: 41px;
+    --start-color: #f5e106;
     --header-with-search-height: calc( var(--header-height) - var(--navar-height))
     
 }
@@ -61,8 +62,9 @@ html{
 
 .grid__column-2-4{
     /* khoảng cách giữa các cột tự động căn chỉnh là 24px */
-    padding-left: 5px;
-    padding-right: 5px;
+    padding: 5px;
+
+    
     /* 2 cột chia cho 10 nhân 100 */
     width: 20%;
 
@@ -158,6 +160,7 @@ html{
     justify-content: space-between;
     padding: 0 12px;
     position: relative;
+    z-index: 1;
     
 }
 
@@ -223,4 +226,56 @@ html{
 
 .select-input__link:hover{
     color: var(--primary-color);
+}
+
+/* home pagination */
+
+.home-pagination{
+    
+
+
+}
+.home-pagination-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.home-pagination-item{
+    list-style: none;
+
+}
+
+.home-pagination-item--active .home-pagination-link{
+    background-color: var(--primary-color);
+    color: var(--white-color);
+
+}
+
+.home-pagination-item--active .home-pagination-link:hover{
+    opacity: 0.8;
+}
+
+.home-pagination-link{
+    text-decoration: none;
+    font-size: 2rem;
+    display: block;
+    min-width: 40px;
+    height: 36px;
+    text-align: center;
+    line-height: 36px;
+    color: #999;
+    margin: 0 16px;
+
+
+
+}
+
+.home-pagination-icon{
+    font-size: 1.4rem;
+    color: #999;
+    margin: 0 24px;
+    cursor: pointer;
+
 }
