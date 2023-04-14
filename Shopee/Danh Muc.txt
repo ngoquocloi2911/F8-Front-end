@@ -96,4 +96,12 @@ filter: brightness(giảm độ sáng
 
 --boder-radius
 
+pagination UI
+
+pagination (dùng chung ở nhiều trang)
+ - ul - li - a
+
+**** Footer
+
+
 		

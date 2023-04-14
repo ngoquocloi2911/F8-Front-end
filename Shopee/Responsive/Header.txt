@@ -1,0 +1,17 @@
+-hide-on-mobile-tablet
+
+-- nên làm cái gì thân thiện với người dùng hơn ( UX)
+
+- fix chiều con ở giỏ hàng
+
+*** Header sort bar --> ok
+
+*** Header seach -- mobile
+
+-- hide-on-moblie
+
+ --lable mobile__search
+
+-- có 1 nav 3 ( tự làm)
+
+

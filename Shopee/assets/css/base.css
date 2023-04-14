@@ -8,6 +8,7 @@
     --header-height: 120px;
     --navar-height: 41px;
     --start-color: #f5e106;
+    --header-soft-bar-height: 44px;
     --header-with-search-height: calc( var(--header-height) - var(--navar-height))
     
 }
