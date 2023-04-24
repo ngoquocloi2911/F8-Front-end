@@ -1,3 +1,25 @@
 custom lại form theo thư viện sẵn có
 
 làm lại 1 thanh menu đổ qua ở góc trái màn hình
+
+** Kỹ thuật kéo ngang 
+
+Vì là điều hướng nên bao ngoài 1  thẻ nav.mobile-category
+
+max-width 
+overflow-x :
+sprink
+
+-- fix lỗi 
+-- logo ở hiện tại -- nhỏ lại
+-- padding vào thẻ a
+
+-- cách truy cập bằng điện thoại
+
+-- xác định địa chỉ ip -- nhập ipconfig ở terminal
+kiểm tra xem địa chỉ  IPv4 Address 192.168.1.58
+ nhập ifconfig
+
+.mobile__category-list::-webkit-scrollbar{
+    display: none;
+}

@@ -1,0 +1,155 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #fff;
+}
+
+.main {
+    width: 1200px;
+    min-height: 100vh;
+    max-width: 100%;
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    height: 48px;
+    background-color: #333;
+}
+
+.nav__list {
+    display: flex;
+    list-style: none;
+}
+
+.nav__link {
+    text-decoration: none;
+    color: #fff;
+    margin-right: 48px;
+}
+
+/* Article */
+h1 {
+    line-height: 2rem;
+}
+
+article {
+    padding: 0 16px;
+    line-height: 1.6rem;
+}
+
+article img {
+    width: 640px;
+    max-width: 100%;
+    display: block;
+    margin: 32px auto;
+}
+/* Responsive navigation bar */
+.nav__link-icon{
+    font-size: 1.4rem;
+    color: #fff;
+    display: block;
+    margin-left: -20px;
+    display: none;
+}
+
+
+/* over lay tạo ra 1 trang phủ lên màn hình */
+
+.nav__overlay{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    animation: FadeIn linear 0.2s;
+}
+
+/* nav mobile */
+/* trang navigation cho mobile and tablet */
+.nav-mobile__pc{
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 320px;
+    max-width: 100%;
+    background-color: #fff;
+    /* dấu thanh này ra ngoài --  */
+    transform: translateX(-100%);
+    opacity: 1;
+    /* trượt từ ngoài vào */
+    transition: all linear .2s ;
+    
+
+}
+
+.nav-mobile__list{
+    list-style: none;
+    padding-left: 0;
+}
+.nav-mobile__link{
+    text-decoration: none;
+    display: block;
+    padding: 10px 24px;
+    color: #000;
+    font-size: 1.2rem;
+}
+
+.nav-mobile-btn{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.2rem;
+    
+}
+
+/* à à -- mình gọi hàm lại bị sai
+ thực hiện hành động checked thì gọi lại được thằng overlay */
+ /* Dấu ~ là thể hiện những thằng có class -- lớp gì đó theo sao nó là được */
+.nav__input:checked ~ .nav__overlay{
+    display: block;
+
+}
+
+/* khi kích vào thì trượt lại vào trong */
+.nav__input:checked ~ .nav-mobile__pc{
+    transform: translateX(0);
+}
+
+
+
+
+
+
+
+
+/* trên tablet and mobile */
+@media (max-width: 1023px) {
+
+    .nav__link-icon{
+        display: block;
+    }
+    .nav__link{
+        display: none;
+    }
+
+}
+
+/* dùng cho thuộc tính animation */
+@keyframes FadeIn{
+    from {
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+}
