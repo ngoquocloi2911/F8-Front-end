@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="./assests/fonts/fontawesome-free-6.4.0-web/css/all.min.css">
     <link rel="stylesheet" href="./assests/css/base.css">
     <link rel="stylesheet" href="./assests/css/main.css">
+    <link rel="stylesheet" href="./assests/css/category.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <!-- câu lệnh nếu trình duyệt nhỏ hơn IE 9 thì sẽ add thư viện hỗ trợ  vào -- bình thường thì không cần  -->
@@ -25,7 +26,7 @@
 </head>
 
 <body>
-    <div id="app">
+    <div id="id">
         <header id="header">
             <!-- header __navbar -->
             <div class="header__navbar-border">
@@ -250,595 +251,299 @@
                 </div>
             </div>
         </header>
-        <div id=app__container"">
-            <div class="top-arrival container">
-                <!-- top new arrivals -->
-                <div class="row">
-                    <h1 class="heading-title">Top New Arrivals</h1>
-                </div>
-                <!-- heading product -->
-                <div class="heading-bar">
-                    <span class="heading-desc">
-                        Browse the collection of our best selling and top interesting products.
-                    </span>
-                    <ul class="heading-list">
-                        <li class="heading-item">
-                            <span class="heading-text heading-text-color"> New arrivals</span>
-                        </li>
-                        <li class="heading-item">
-                            <span class="heading-text"> Featured </span>
-                        </li>
+        <div id="app__container ">
+            <div class="container">
+                <div class="product-content">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="product-content-top">
+                                <img src="./assests/img/20.jpg" alt="" class="product-content-top-img">
+                                <div class="product-content-top-value">
+                                    <a href="" class="product-content-top-link"><i class=" product-content-top-icon fa-regular fa-heart"></i></a>
+                                    <div class="product-mes-item">
+                                        <a href="" class="product-mes-link"><span class="product-mes">Add towishlist</span></a>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="product-content-bottom">
+                                        <img src="./assests/img/20.jpg" alt=""
+                                            class="product-content-bottom-img-saferi">
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="product-content-bottom">
+                                        <img src="./assests/img/21.jpg" alt="" class="product-content-bottom-img">
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="product-content-bottom">
+                                        <img src="./assests/img/22.jpg" alt="" class="product-content-bottom-img">
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="product-content-bottom">
+                                        <img src="./assests/img/23.jpg" alt="" class="product-content-bottom-img">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="product-content-right">
+                                <h1 class="product-content-right-heading">Bose SoundLink Mini</h1>
+                                <span class="product-content-right-price">$599.00</span>
+                                <div class="product-content-right-evaluate">
+                                    <div class="product-content-right-start">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <a href="#" class="product-content-right-cmt"> (1 customer review)</a>
+                                </div>
+                                <span class="product-content-right-content">Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit. Vero quos, ullam quidem suscipit, doloribus laboriosam unde libero
+                                    necessitatibus ipsa autem excepturi dolorum modi voluptatem quia cum optio!
+                                    Adipisci, aut placeat!</span>
+                                <div class="product-content-right-form">
+                                    <div class="product-content-right-quality">
+                                        <button class="quality-subtraction">-</button>
+                                        <span class="quality-number">1</span>
+                                        <button class="quality-subtraction">+</button>
+                                    </div>
+                                    <button class="_btn _btn-quality"><i class="fa-sharp fa-solid fa-cart-shopping"></i>
+                                        add to
+                                        cart</button>
+                                </div>
+                                <a href="#" class="product-content-right-reload"><i
+                                        class="product-content-right-icon fa-solid fa-arrows-rotate"></i>Add
+                                    to compare</a>
+                                <span class="product-content-right-category">Category: <a href=""
+                                        class="content-right-category-link">Engine</a></span>
+                                <div class="product-content-right-tag">Tags:
+                                    <a href="" class="product-content-right-link">accessories</a>,
+                                    <a href="" class="product-content-right-link">best trend</a>,
+                                    <a href="" class="product-content-right-link">fashion</a>,
+                                    <a href="" class="product-content-right-link">new</a>
+                                </div>
+                                <div class="product-content-right-share">Share:
+                                    <a href="" class="content-right-share-link">
+                                        <i class="fa-brands fa-twitter"></i>
+                                    </a>
+                                    <a href="" class="content-right-share-link">
+                                        <i class="fa-brands fa-facebook-f"></i>
+                                    </a>
+                                    <a href="" class="content-right-share-link">
+                                        <i class="fa-brands fa-vk"></i>
+                                    </a>
+                                    <a href="" class="content-right-share-link">
+                                        <i class="fa-brands fa-pinterest"></i>
+                                    </a>
+                                    <a href="" class="content-right-share-link">
+                                        <i class="fa-solid fa-envelope"></i>
+                                    </a>
+                                    <a href="" class="content-right-share-link">
+                                        <i class="fa-brands fa-invision"></i>
+                                    </a>
+                                    <a href="" class="content-right-share-link">
+                                        <i class="fa-solid fa-phone-volume"></i>
+                                    </a>
+                                    <a href="" class="content-right-share-link">
+                                        <i class="fa-brands fa-skype"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <!-- w3-tav -->
+                    <ul class="w3-tav-list">
+                        <li class="w3-tav-item"><a href="#" class="w3-tav-link">Description</a></li>
+                        <li class="w3-tav-item"><a href="#" class="w3-tav-link">Reviews (1)</a></li>
                     </ul>
-                </div>
-                <!-- top new product -->
-                <div class="row">
-                    <div class="col-md-3">
-                        <div class="product-item">
-                            <div class="sale-wrapper">
-                                <span class="sale-wrapper-text">Sale</span>
-                            </div>
-                            <div class="product-image-wrap">
-                                <a href="" class="product-image-wrap-link">
-                                    <img src="./assests/img/1.jpg" alt="" class="product-image">
-                                </a>
-                                <ul class="product-icon">
-                                    <li> <a href=""><i class="fa-regular fa-eye"></i></a></li>
-                                    <li> <a href=""><i class="fa-solid fa-cart-shopping"></i></a></li>
-                                    <li> <a href=""><i class="fa-solid fa-arrows-rotate"></i></a></li>
-                                    <li> <a href=""><i class="fa-regular fa-heart"></i></a></li>
-                                </ul>
-                            </div>
-                            <div class="product-footer">
-                                <span class="product-short-desc">
-                                    MP3 / MP4 Player Accessories
-                                </span>
-                                <h1 class="product-title">Beats Studio Wireless Over-Ear</h1>
-                                <div class="product-price">
-                                    <span class="product-price-1 product-price-disable ">$299.000 </span>
-                                    <span class="product-price-2">$150.000</span>
-                                </div>
-
-
-
-                                <div class="_btn _btn-product">Add to cart</div>
-                            </div>
-
-                        </div>
+                    <div class="w3-text-editor">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat.
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                        pariatur.
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+                        id est laborum.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco.
                     </div>
-                    <div class="col-md-3">
-                        <div class="product-item">
-                            <div class="product-image-wrap">
-                                <a href="" class="product-image-wrap-link">
-                                    <img src="./assests/img/21.jpg" alt="" class="product-image">
-                                </a>
-                                <ul class="product-icon">
-                                    <li> <a href=""><i class="fa-regular fa-eye"></i></a></li>
-                                    <li> <a href=""><i class="fa-solid fa-cart-shopping"></i></a></li>
-                                    <li> <a href=""><i class="fa-solid fa-arrows-rotate"></i></a></li>
-                                    <li> <a href=""><i class="fa-regular fa-heart"></i></a></li>
-                                </ul>
-                            </div>
-                            <div class="product-footer">
-                                <span class="product-short-desc">
-                                    Engine
-                                </span>
-                                <h1 class="product-title">Bose SoundLink Mini</h1>
-                                <div class="product-price">
-                                    <span class="product-price-1 ">$599.000 </span>
-
-                                </div>
-
-
-                                <div class="_btn _btn-product">Add to cart</div>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="product-item">
-                            <div class="sale-wrapper">
-                                <span class="sale-wrapper-text">Sale</span>
-                            </div>
-                            <div class="product-image-wrap">
-                                <a href="" class="product-image-wrap-link">
-                                    <img src="./assests/img/15.jpg" alt="" class="product-image">
-                                </a>
-                                <ul class="product-icon">
-                                    <li> <a href=""><i class="fa-regular fa-eye"></i></a></li>
-                                    <li> <a href=""><i class="fa-solid fa-cart-shopping"></i></a></li>
-                                    <li> <a href=""><i class="fa-solid fa-arrows-rotate"></i></a></li>
-                                    <li> <a href=""><i class="fa-regular fa-heart"></i></a></li>
-                                </ul>
-                            </div>
-                            <div class="product-footer">
-                                <span class="product-short-desc">
-                                    MP3 / MP4 Player Accessories
-                                </span>
-                                <h1 class="product-title">Bose® 35 Wireless Headphones</h1>
-                                <div class="product-price">
-                                    <span class="product-price-1 product-price-disable ">$1.999.000 </span>
-                                    <span class="product-price-2">$1.000.000</span>
-                                </div>
-
-                                <div class="_btn _btn-product">Add to cart</div>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="product-item">
-                            <div class="product-image-wrap">
-                                <a href="" class="product-image-wrap-link">
-                                    <img src="./assests/img/9.jpg" alt="" class="product-image">
-                                </a>
-                                <ul class="product-icon">
-                                    <li> <a href=""><i class="fa-regular fa-eye"></i></a></li>
-                                    <li> <a href=""><i class="fa-solid fa-cart-shopping"></i></a></li>
-                                    <li> <a href=""><i class="fa-solid fa-arrows-rotate"></i></a></li>
-                                    <li> <a href=""><i class="fa-regular fa-heart"></i></a></li>
-                                </ul>
-                            </div>
-                            <div class="product-footer">
-                                <span class="product-short-desc">
-                                    Speakers
-                                </span>
-                                <h1 class="product-title">Beats Solo3 Wireless On-Ear</h1>
-                                <div class="product-price">
-                                    <span class="product-price-1 ">$199.000 </span>
-                                </div>
-                                <div class="_btn _btn-product">Add to cart</div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="element-margin">
-                    <div class="row ">
-                        <div class="col-md-3">
-                            <div class="elementor-container">
-                                <img src="./assests/img/delivery-1.png" alt="" class="elementor-container-img">
-                                <span class="elementor-container-text">
-                                    <strong>Free delivery</strong> from 100$
-                                </span>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="elementor-container">
-                                <img src="./assests/img/support-1.png" alt="" class="elementor-container-img">
-                                <span class="elementor-container-text">
-                                    <strong>24H Support</strong> center
-                                </span>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="elementor-container">
-                                <img src="./assests/img/save-2.png" alt="" class="elementor-container-img">
-                                <span class="elementor-container-text">
-                                    <strong>Saving</strong> your money
-                                </span>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="elementor-container">
-                                <img src="./assests/img/quality-2.png" alt="" class="elementor-container-img">
-                                <span class="elementor-container-text">
-                                    <strong>Best Quality</strong> materials
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="container-phantom">
-                    <div class="row">
+                    <div class="row mrt-48">
                         <div class="col-md-6">
-                            <div class="container-phantom-content">
-                                <img src="./assests/img/71.jpg" alt="" class="container-phantom-img">
+                            <div class="w3-editor-container">
+                                <img src="./assests/img/4-300x300.jpg" alt="" class="w3-editor-img">
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <div class="container-phantom-right">
-                                <div class="container-phantom-up">
-                                    <h1 class="container-phantom-heading">DJL Phantom 3 Standard RTF Kit</h1>
-                                    <span class="container-phantom-text">Lorem ipsum dolor sit amet consectetur
-                                        adipisicing elit.</span>
-                                    <button class="phantom-btn">BUY NOW</button>
-                                </div>
+                            <div class="w3-editor-widget">
+                                <h4 class="w3-editor-widget-heading">Product Informations</h4>
+                                <strong>Other Features:</strong> Bluetooth, Charging, With Mic, Stereo Bluetooth <br>
+                                <strong>Form Factor:</strong>In Ear<br>
+                                <strong>Connections:</strong> Bluetooth, Wireless <br>
+                                <strong>Bluetooth: </strong> Compatiblity <br>
+                                <strong>Drivers: </strong> 14 mm drivers <br>
+                                <strong>Power Source : </strong> Battery Power <br>
+                                <strong>Batteries: </strong> Rechargeable Lithium-Ion <br>
+                                <strong>Battery life: </strong> Up to eight hours of playing time. <br>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="featured">
-                    <div class="row">
-                        <!-- heading product -->
-                        <h1 class="heading-title">Featured Categories</h1>
-                        <span class="heading-desc">
-                            Variety of product categories, tens of products, only five-stars reviews.
-                        </span>
+                    <div class="w3-text-editor  mrt-12">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat.
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                        pariatur.
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+                        id est laborum.
                     </div>
-                    <!-- top Featured Categories -->
-                    <div class="row">
-                        <div class="col-md-3">
-                            <div class="Featured-categories">
-                                <img src="./assests/img/cat6.jpg" alt="" class="Featured-categories-img">
-                                <ul class="Featured-categories-list">
-                                    <li class="Featured-categories-item ">
-                                        <a href="" class="Featured-categories-link Featured-categories-link-first">Car
-                                            Electronics</a>
-                                    </li>
-                                    <li class="Featured-categories-item">
-                                        <a href="" class="Featured-categories-link">Radar Detectors (2)</a>
-                                    </li>
-                                    <li class="Featured-categories-item">
-                                        <a href="" class="Featured-categories-link">Car Electrical Appliances (4)</a>
-                                    </li>
-                                    <li class="Featured-categories-item">
-                                        <a href="" class="Featured-categories-link">Car Camera (4)</a>
-                                    </li>
-                                    <li class="Featured-categories-item">
-                                        <a href="" class="Featured-categories-link">Audio (2)</a>
-                                    </li>
-                                    <li class="Featured-categories-item">
-                                        <a href="" class="Featured-categories-link Featured-categories-link-last">ViewAll</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="Featured-categories">
-                                <img src="./assests/img/35.jpg" alt="" class="Featured-categories-img">
-                                <ul class="Featured-categories-list">
-                                    <li class="Featured-categories-item ">
-                                        <a href="" class="Featured-categories-link Featured-categories-link-first">Car
-                                            Electronics</a>
-                                    </li>
-                                    <li class="Featured-categories-item">
-                                        <a href="" class="Featured-categories-link">Air-conditioning Installation
-                                            (1)</a>
-                                    </li>
-                                    <li class="Featured-categories-item">
-                                        <a href="" class="Featured-categories-link">Radiators & Parts (1)</a>
-                                    </li>
-                                    <li class="Featured-categories-item">
-                                        <a href="" class="Featured-categories-link">Cooling System (2)</a>
-                                    </li>
-                                    <li class="Featured-categories-item">
-                                        <a href="" class="Featured-categories-link">Sensors (1)</a>
-                                    </li>
-                                    <li class="Featured-categories-item">
-                                        <a href="" class="Featured-categories-link Featured-categories-link-last">View
-                                            All</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="Featured-categories">
-                                <img src="./assests/img/43.jpg" alt="" class="Featured-categories-img">
-                                <ul class="Featured-categories-list">
-                                    <li class="Featured-categories-item ">
-                                        <a href="" class="Featured-categories-link Featured-categories-link-first">Smart
-                                            Electronic Devices</a>
-                                    </li>
-                                    <li class="Featured-categories-item">
-                                        <a href="" class="Featured-categories-link">Smart Glasses (1)</a>
-                                    </li>
-                                    <li class="Featured-categories-item">
-                                        <a href="" class="Featured-categories-link">Smart Remote Control (1)</a>
-                                    </li>
-                                    <li class="Featured-categories-item">
-                                        <a href="" class="Featured-categories-link">Smart Home Controls (2)</a>
-                                    </li>
-                                    <li class="Featured-categories-item">
-                                        <a href="" class="Featured-categories-link">Smart Accessories (3)</a>
-                                    </li>
-                                    <li class="Featured-categories-item">
-                                        <a href="" class="Featured-categories-link Featured-categories-link-last">View
-                                            All</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="Featured-categories">
-                                <img src="./assests/img/cat1.jpg" alt="" class="Featured-categories-img">
-                                <ul class="Featured-categories-list">
-                                    <li class="Featured-categories-item ">
-                                        <a href=""
-                                            class="Featured-categories-link Featured-categories-link-first">Portable
-                                            Audio & Video</a>
-                                    </li>
-                                    <li class="Featured-categories-item">
-                                        <a href="" class="Featured-categories-link">Portable TV (1)</a>
-                                    </li>
-                                    <li class="Featured-categories-item">
-                                        <a href="" class="Featured-categories-link">MP4 Player (1)</a>
-                                    </li>
-                                    <li class="Featured-categories-item">
-                                        <a href="" class="Featured-categories-link">eBook Reader (2)</a>
-                                    </li>
-                                    <li class="Featured-categories-item">
-                                        <a href="" class="Featured-categories-link">3D Glasses Virtual Reality
-                                            Glasses(1)</a>
-                                    </li>
-                                    <li class="Featured-categories-item">
-                                        <a href="" class="Featured-categories-link Featured-categories-link-last">View
-                                            All</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="exolens">
-                    <div class="row">
-                        <!-- heading product -->
-                        <h1 class="heading-title">Top New Arrivals</h1>
-                        <span class="heading-desc">
-                            Browse the collection of our best selling and top interesting products.
-                        </span>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="product-item">
-                                        <div class="sale-wrapper">
-                                            <span class="sale-wrapper-text">Sale</span>
-                                        </div>
-                                        <div class="product-image-wrap">
-                                            <a href="" class="product-image-wrap-link">
-                                                <img src="./assests/img/1.jpg" alt="" class="product-image">
-                                            </a>
-                                            <ul class="product-icon">
-                                                <li> <a href=""><i class="fa-regular fa-eye"></i></a></li>
-                                                <li> <a href=""><i class="fa-solid fa-cart-shopping"></i></a></li>
-                                                <li> <a href=""><i class="fa-solid fa-arrows-rotate"></i></a></li>
-                                                <li> <a href=""><i class="fa-regular fa-heart"></i></a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="product-footer">
-                                            <span class="product-short-desc">
-                                                MP3 / MP4 Player Accessories
-                                            </span>
-                                            <h1 class="product-title">Beats Studio Wireless Over-Ear</h1>
-                                            <div class="product-price">
-                                                <span class="product-price-1 product-price-disable ">$299.000 </span>
-                                                <span class="product-price-2">$150.000</span>
-                                            </div>
 
-
-
-                                            <div class="_btn _btn-product">Add to cart</div>
-                                        </div>
-
+                    <!-- Related Products -->
+                    <div class="related-products mrt-48">
+                        <div class="row">
+                            <h1 class="heading-title">Related products</h1>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="product-item">
+                                    <div class="sale-wrapper">
+                                        <span class="sale-wrapper-text">Sale</span>
                                     </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="product-item">
-                                        <div class="product-image-wrap">
-                                            <a href="" class="product-image-wrap-link">
-                                                <img src="./assests/img/21.jpg" alt="" class="product-image">
-                                            </a>
-                                            <ul class="product-icon">
-                                                <li> <a href=""><i class="fa-regular fa-eye"></i></a></li>
-                                                <li> <a href=""><i class="fa-solid fa-cart-shopping"></i></a></li>
-                                                <li> <a href=""><i class="fa-solid fa-arrows-rotate"></i></a></li>
-                                                <li> <a href=""><i class="fa-regular fa-heart"></i></a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="product-footer">
-                                            <span class="product-short-desc">
-                                                Engine
-                                            </span>
-                                            <h1 class="product-title">Bose SoundLink Mini</h1>
-                                            <div class="product-price">
-                                                <span class="product-price-1 ">$599.000 </span>
-
-                                            </div>
-
-
-                                            <div class="_btn _btn-product">Add to cart</div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="product-item">
-                                        <div class="sale-wrapper">
-                                            <span class="sale-wrapper-text">Sale</span>
-                                        </div>
-                                        <div class="product-image-wrap">
-                                            <a href="" class="product-image-wrap-link">
-                                                <img src="./assests/img/15.jpg" alt="" class="product-image">
-                                            </a>
-                                            <ul class="product-icon">
-                                                <li> <a href=""><i class="fa-regular fa-eye"></i></a></li>
-                                                <li> <a href=""><i class="fa-solid fa-cart-shopping"></i></a></li>
-                                                <li> <a href=""><i class="fa-solid fa-arrows-rotate"></i></a></li>
-                                                <li> <a href=""><i class="fa-regular fa-heart"></i></a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="product-footer">
-                                            <span class="product-short-desc">
-                                                MP3 / MP4 Player Accessories
-                                            </span>
-                                            <h1 class="product-title">Bose® 35 Wireless Headphones</h1>
-                                            <div class="product-price">
-                                                <span class="product-price-1 product-price-disable ">$1.999.000 </span>
-                                                <span class="product-price-2">$1.000.000</span>
-                                            </div>
-
-                                            <div class="_btn _btn-product">Add to cart</div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="product-item">
-                                        <div class="product-image-wrap">
-                                            <a href="" class="product-image-wrap-link">
-                                                <img src="./assests/img/9.jpg" alt="" class="product-image">
-                                            </a>
-                                            <ul class="product-icon">
-                                                <li> <a href=""><i class="fa-regular fa-eye"></i></a></li>
-                                                <li> <a href=""><i class="fa-solid fa-cart-shopping"></i></a></li>
-                                                <li> <a href=""><i class="fa-solid fa-arrows-rotate"></i></a></li>
-                                                <li> <a href=""><i class="fa-regular fa-heart"></i></a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="product-footer">
-                                            <span class="product-short-desc">
-                                                Speakers
-                                            </span>
-                                            <h1 class="product-title">Beats Solo3 Wireless On-Ear</h1>
-                                            <div class="product-price">
-                                                <span class="product-price-1 ">$199.000 </span>
-                                            </div>
-                                            <div class="_btn _btn-product">Add to cart</div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="featured-optics">
-                                <div class="featured-optics-by">
-                                    <h1 class="featured-optics-heading">ExoLens With Optics By ZEISS</h1>
-                                    <img src="./assests/img/61-ow6mduo0nkuqzz4o45c6sxla171l1dmztxikyq0z34.jpg" alt=""
-                                        class="featured-optics-img">
-                                    <button class="featured-optics-btn">Buy now</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="latest">
-                    <div class="row">
-                        <!-- heading product -->
-                        <h1 class="heading-title">Latest Posts</h1>
-                        <span class="heading-desc"> Present posts in a best way to highlight interesting moments of your
-                            blog.</span>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="latest-container">
-                                <div class="lastest-general">
-                                    <span class="lastest-general-text">General</span>
-                                </div>
-                                <div class="latest-wrap-img">
-                                    <a href="" class="latest-wrap-img-link">
-                                        <img src="./assests/img/5.jpg" alt="" class="latest-img">
-                                    </a>
-                                </div>
-
-                                <div class="lastest-body">
-                                    <div class="latest-header">
-                                        <a href="" class="latest-link">
-                                            <h3 class="latest-heading">Dapibus Etiam Tellus</h3>
+                                    <div class="product-image-wrap">
+                                        <a href="" class="product-image-wrap-link">
+                                            <img src="./assests/img/36.jpg" alt="" class="product-image">
                                         </a>
-                                        <span class="latest-date"> <i
-                                                class=" latest-date-icon fa-solid fa-calendar-days"></i>
-                                            October 30, 2016 <i class="latest-date-icon fa-solid fa-message"></i>
-                                            0</span>
+                                        <ul class="product-icon">
+                                            <li> <a href=""><i class="fa-regular fa-eye"></i></a></li>
+                                            <li> <a href=""><i class="fa-solid fa-cart-shopping"></i></a></li>
+                                            <li> <a href=""><i class="fa-solid fa-arrows-rotate"></i></a></li>
+                                            <li> <a href=""><i class="fa-regular fa-heart"></i></a></li>
+                                        </ul>
                                     </div>
-                                    <span class="latest-content">
-                                        Gravida feugiat nascetur adipiscing metus dolor a cum class curae cum
-                                        consectetur vel in ut phasellus commodo vestibulum adipiscing nam fringilla
-                                        scelerisque. Adipiscing odio ullamcorper... </span>
-                                    <a href="" class="latest-continue">Continue reading</a>
-                                </div>
+                                    <div class="product-footer">
+                                        <span class="product-short-desc">
+                                            Electronic Components & Supplies
+                                        </span>
+                                        <h1 class="product-title">Velleman Vertex K 8400</h1>
+                                        <div class="product-price">
+                                            <span class="product-price-1 product-price-disable ">$299.000 </span>
+                                            <span class="product-price-2">$150.000</span>
+                                        </div>
 
+
+
+                                        <div class="_btn _btn-product">Add to cart</div>
+                                    </div>
+
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="latest-container">
-                                <div class="lastest-general">
-                                    <span class="lastest-general-text">General</span>
-                                </div>
-                                <div class="latest-wrap-img">
-                                    <a href="" class="latest-wrap-img-link">
-                                        <img src="./assests/img/10.jpg" alt="" class="latest-img">
-                                    </a>
-                                </div>
-
-                                <div class="lastest-body">
-                                    <div class="latest-header">
-                                        <a href="" class="latest-link">
-                                            <h3 class="latest-heading">Etiam tellus</h3>
+                            <div class="col-md-3">
+                                <div class="product-item">
+                                    <div class="product-image-wrap">
+                                        <a href="" class="product-image-wrap-link">
+                                            <img src="./assests/img/25.jpg" alt="" class="product-image">
                                         </a>
-                                        <span class="latest-date"> <i
-                                                class=" latest-date-icon fa-solid fa-calendar-days"></i>
-                                            October 19, 2016 <i class="latest-date-icon fa-solid fa-message"></i>
-                                            0</span>
+                                        <ul class="product-icon">
+                                            <li> <a href=""><i class="fa-regular fa-eye"></i></a></li>
+                                            <li> <a href=""><i class="fa-solid fa-cart-shopping"></i></a></li>
+                                            <li> <a href=""><i class="fa-solid fa-arrows-rotate"></i></a></li>
+                                            <li> <a href=""><i class="fa-regular fa-heart"></i></a></li>
+                                        </ul>
                                     </div>
-                                    <span class="latest-content">
-                                        Gravida feugiat nascetur adipiscing metus dolor a cum class curae cum
-                                        consectetur vel in ut phasellus commodo vestibulum adipiscing nam fringilla
-                                        scelerisque. Adipiscing odio ullamcorper... </span>
-                                    <a href="" class="latest-continue">Continue reading</a>
-                                </div>
+                                    <div class="product-footer">
+                                        <span class="product-short-desc">
+                                            Smart Home Controls
+                                        </span>
+                                        <h1 class="product-title">Robotic Arm Edge</h1>
+                                        <div class="product-price">
+                                            <span class="product-price-1 ">$290.000 </span>
 
+                                        </div>
+
+
+                                        <div class="_btn _btn-product">Add to cart</div>
+                                    </div>
+
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="latest-container">
-                                <div class="lastest-general">
-                                    <span class="lastest-general-text">General</span>
-                                </div>
-                                <div class="latest-wrap-img">
-                                    <a href="" class="latest-wrap-img-link">
-                                        <img src="./assests/img/14.jpg" alt="" class="latest-img">
-                                    </a>
-                                </div>
-
-                                <div class="lastest-body">
-                                    <div class="latest-header">
-                                        <a href="" class="latest-link">
-                                            <h3 class="latest-heading">Consectetur</h3>
-                                        </a>
-                                        <span class="latest-date"> <i
-                                                class=" latest-date-icon fa-solid fa-calendar-days"></i>
-                                            October 19, 2016 <i class="latest-date-icon fa-solid fa-message"></i>
-                                            0</span>
+                            <div class="col-md-3">
+                                <div class="product-item">
+                                    <div class="sale-wrapper">
+                                        <span class="sale-wrapper-text">Sale</span>
                                     </div>
-                                    <span class="latest-content">
-                                        Lorem ipsum donec mattis mi congue non pellentesque luctus, sociosqu justo id
-                                        ultrices sapien aliquet curabitur iaculis, ullamcorper malesuada neque auctor
-                                        nunc tortor vestibulum non... </span>
-                                    <a href="" class="latest-continue">Continue reading</a>
-                                </div>
+                                    <div class="product-image-wrap">
+                                        <a href="" class="product-image-wrap-link">
+                                            <img src="./assests/img/70.jpg" alt="" class="product-image">
+                                        </a>
+                                        <ul class="product-icon">
+                                            <li> <a href=""><i class="fa-regular fa-eye"></i></a></li>
+                                            <li> <a href=""><i class="fa-solid fa-cart-shopping"></i></a></li>
+                                            <li> <a href=""><i class="fa-solid fa-arrows-rotate"></i></a></li>
+                                            <li> <a href=""><i class="fa-regular fa-heart"></i></a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="product-footer">
+                                        <span class="product-short-desc">
+                                            Camera & Photo
+                                        </span>
+                                        <h1 class="product-title">DJI Phantom 4 Camera Drone</h1>
+                                        <div class="product-price">
+                                            <span class="product-price-1 product-price-disable ">$1.999.000 </span>
+                                            <span class="product-price-2">$1.000.000</span>
+                                        </div>
 
+                                        <div class="_btn _btn-product">Add to cart</div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="product-item">
+                                    <div class="product-image-wrap">
+                                        <a href="" class="product-image-wrap-link">
+                                            <img src="./assests/img/50.jpg" alt="" class="product-image">
+                                        </a>
+                                        <ul class="product-icon">
+                                            <li> <a href=""><i class="fa-regular fa-eye"></i></a></li>
+                                            <li> <a href=""><i class="fa-solid fa-cart-shopping"></i></a></li>
+                                            <li> <a href=""><i class="fa-solid fa-arrows-rotate"></i></a></li>
+                                            <li> <a href=""><i class="fa-regular fa-heart"></i></a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="product-footer">
+                                        <span class="product-short-desc">
+                                            Optical Drives
+                                        </span>
+                                        <h1 class="product-title">HP LaserJet P1102 (CE651A)</h1>
+                                        <div class="product-price">
+                                            <span class="product-price-1 ">$290.000 </span>
+                                        </div>
+                                        <div class="_btn _btn-product">Add to cart</div>
+                                    </div>
+
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="cover">
-                    <div class="logo">
-                        <img src="./assests/img/logo-1-1.png" alt="" class="logo-item--img">
-                        <img src="./assests/img/logo-3.png" alt="" class="logo-item--img">
-                        <img src="./assests/img/logo-2.png" alt="" class="logo-item--img">
-                        <img src="./assests/img/logo-1.png" alt="" class="logo-item--img">
-                        <img src="./assests/img/logo-4.png" alt="" class="logo-item--img">
-                    </div>
-                    <div class="subscribe">
-                        <div class="img-container">
-                            <h2 class="img-container-heading">Subscribe to our newsletter!</h2>
-                            <form action="" class="img-container-content">
-                                <input type="text" name="" id="" class="img-container-input"
-                                    placeholder="Your email address" required>
-                                <input type="submit" class="img-container-btn" value="SIGN UP">
-                            </form>
-                        </div>
 
-                    </div>
-                </div>
+
             </div>
         </div>
         <footer id="footer">
-            <div class="container">
+            <div class="container mrt-48">
                 <div class="row">
                     <div class="col-md-3">
                         <div class="footer-container">
@@ -1132,6 +837,8 @@
             </ul>
         </div>
     </div>
+
+
 </body>
 
 </html>

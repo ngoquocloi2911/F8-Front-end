@@ -20,7 +20,7 @@ html{
     --primary-color: #00acc1;
     --white-color: #fff;
     --text-color :#222;
-    --header-height: 250px;
+    --header-height: 120px;
     --header-navbar: 31px;
     --header-with-search: calc(var( --header-height) - var(--header-navbar));
     --boder-color: #e1e1e1;
@@ -35,6 +35,7 @@ html{
     padding: 8px 16px;
     cursor: pointer;
     text-transform: uppercase;
+    border-radius: 2px;
 }
 .btn-size-s{
     height: 30px;
@@ -57,8 +58,32 @@ html{
 }
 
 
+/* price old */
+.price-old{
+    text-decoration: line-through;
+}
+
 
 /* link under */
 .header__navbar-link-under{
     
+}
+
+/* marin top */
+.mrt-48{
+    margin-top: 48px !important;
+}
+.mrt-12{
+    margin-top: 12px !important;
+}
+/* keyframes */
+@keyframes fadIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+
+    }
 }

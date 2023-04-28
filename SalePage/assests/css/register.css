@@ -1,0 +1,31 @@
+span.checkbox-span{
+}
+.anim{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.anim-left{
+    display: flex;
+    align-items: center;
+}
+label.anim a {
+    margin-top: 0;
+    margin-left: 4px;
+    font-size: 1.6rem;
+}
+label.anim a:first-child{
+    color: #00c6d7;
+    text-decoration: underline;
+    font-size: 1.4rem;
+}
+label.anim span{
+    letter-spacing: 1px;
+}
+input.checkbox:after{
+    top: 5px;
+}
+.main-layout{
+    width: 40%;
+    padding: 4em 2em;
+}
