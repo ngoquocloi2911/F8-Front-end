@@ -126,33 +126,35 @@
                         </div>
                         <div class="header__search">
                             <div class="header__search-content">
-
-                                <label for="header__catagory-checbox" class="header__search-select">
-                                    <span class="header__search-lable">All categories </span>
-                                    <i class=" header__search-select-icon ti-angle-down"></i>
-                                </label>
-                                <input hidden type="checkbox" id="header__catagory-checbox"
-                                    class="header-search-checbox">
-                                <ul class="header__history-item">
-                                    <li class="header__history-list">All categories</li>
-                                    <li class="header__history-list"> Automobiles & Motorcycles</li>
-                                    <li class="header__history-list"> Car Electronics</li>
-                                    <li class="header__history-list header__history-item--lv2">
-                                        Car Camera</li>
-                                    <li class="header__history-list">Car DVR</li>
-                                    <li class="header__history-list header__history-item--lv2">
-                                        Car DVRs</li>
-                                    <li class="header__history-list ">Car Electrical Appliances</li>
-
-                                    <li class="header__history-list header__history-item--lv3"> Audio</li>
-                                    <li class="header__history-list header__history-item--lv3"> Marine GPS</li>
-                                    <li class="header__history-list header__history-item--lv2"> Car Video Players</li>
-                                    <li class="header__history-list header__history-item--lv2">Radar Detectors</li>
-                                    <li class="header__history-list"> GPS & Accessories</li>
-                                    <li class="header__history-list">Car Video Players</li>
-                                    <li class="header__history-list header__history-item--lv2">Radar Detectors</li>
-                                    <li class="header__history-list">GPS & Accessories</li>
-                                </ul>
+                                <select name="" id="" class="header__search-select">
+                                    <option value="">All categories</option>
+                                    <option value="">Automobiles & Motorcycles</option>
+                                    <option value="">&nbsp;Car Electronics</option>
+                                    <option value="">&nbsp;&nbsp;Car Camera</option>
+                                    <option value="">&nbsp;&nbsp;Car DVR</option>
+                                    <option value="">&nbsp;&nbsp;Car DVRs</option>
+                                    <option value="">&nbsp;&nbsp;Car Electrical Appliances</option>
+                                    <option value="">&nbsp;&nbsp;&nbsp;Audio</option>
+                                    <option value="">&nbsp;&nbsp;&nbsp;Marine GPS</option>
+                                    <option value="">&nbsp;&nbsp;Car Video Players</option>
+                                    <option value="">&nbsp;&nbsp;Radar Detectors</option>
+                                    <option value="">Car Video Players</option>
+                                    <option value="">&nbsp;GPS & Accessories</option>
+                                    <option value="">&nbsp;&nbsp;Car Video Players</option>
+                                    <option value="">&nbsp;&nbsp;Radar Detectors</option>
+                                    <option value="">GPS & Accessories</option>
+                                    <option value="">&nbsp;&nbsp;Car Video Players</option>
+                                    <option value="">&nbsp;&nbsp;GPS & Accessories</option>
+                                    <option value="">Car Video Players</option>
+                                    <option value="">&nbsp;&nbsp;Radar Detectors</option>
+                                    <option value="">GPS & Accessories</option>
+                                    <option value="">GPS & Accessories</option>
+                                    <option value="">&nbsp;&nbsp;Car Video Players</option>
+                                    <option value="">&nbsp;&nbsp;GPS & Accessories</option>
+                                    <option value="">Car Video Players</option>
+                                    <option value="">&nbsp;&nbsp;Radar Detectors</option>
+                                    <option value="">GPS & Accessories</option>
+                                </select>
                                 <div class="header__search-wrap">
                                     <input type="text" class="header__search-input" placeholder="Type here..."
                                         autofocus>
@@ -259,9 +261,11 @@
                             <div class="product-content-top">
                                 <img src="./assests/img/20.jpg" alt="" class="product-content-top-img">
                                 <div class="product-content-top-value">
-                                    <a href="" class="product-content-top-link"><i class=" product-content-top-icon fa-regular fa-heart"></i></a>
+                                    <a href="" class="product-content-top-link"><i
+                                            class=" product-content-top-icon fa-regular fa-heart"></i></a>
                                     <div class="product-mes-item">
-                                        <a href="" class="product-mes-link"><span class="product-mes">Add towishlist</span></a>
+                                        <a href="" class="product-mes-link"><span class="product-mes">Add
+                                                towishlist</span></a>
                                     </div>
 
                                 </div>
@@ -842,3 +846,16 @@
 </body>
 
 </html>
+<script>
+    const element = document.querySelector('.container__nav-bar');
+    const elementRect = element.getBoundingClientRect();
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > elementRect.top) {
+            element.style.position = 'fixed';
+            element.style.top = '0';
+        } else {
+            element.style.position = '';
+            element.style.top = '';
+        }
+    });
+</script>

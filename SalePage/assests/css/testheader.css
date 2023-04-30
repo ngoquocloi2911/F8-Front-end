@@ -1,7 +1,6 @@
-body {
+body{
     height: 1200px;
 }
-
 /* ********* Header */
 #app {
     width: 100%;
@@ -187,7 +186,7 @@ body {
 
 .header__search-select::-webkit-scrollbar {
     width: 3px;
-    height: 5px;
+    height: 5px ;
     background-color: var(--white-color);
     border-radius: 10px;
 }
@@ -327,34 +326,23 @@ span.header__search-heart-lable {
     font-size: 1.5em;
     position: relative;
 }
-
 .menu-item::before {
-    content: "";
-    /* tạo một phần tử giả trước phần tử thật */
-    position: absolute;
-    /* đặt phần tử giả ở vị trí tuyệt đối */
-    top: 0;
-    /* đặt phần tử giả ở vị trí trên cùng của phần tử cha */
-    left: -50%;
-    /* đặt phần tử giả ở bên trái của phần tử cha */
-    width: 100%;
-    /* đặt chiều rộng của phần tử giả bằng với phần tử cha */
-    height: 2px;
-    /* đặt chiều cao của đường viền */
-    background-color: transparent;
-    /* đặt màu cho đường viền */
-    transition: all 0.3s ease-in-out;
-    /* thời gian và kiểu chuyển đổi */
+    content: ""; /* tạo một phần tử giả trước phần tử thật */
+    position: absolute; /* đặt phần tử giả ở vị trí tuyệt đối */
+    top: 0; /* đặt phần tử giả ở vị trí trên cùng của phần tử cha */
+    left: -50%; /* đặt phần tử giả ở bên trái của phần tử cha */
+    width: 100%; /* đặt chiều rộng của phần tử giả bằng với phần tử cha */
+    height: 2px; /* đặt chiều cao của đường viền */
+    background-color: transparent; /* đặt màu cho đường viền */
+    transition: all 0.3s ease-in-out; /* thời gian và kiểu chuyển đổi */
     opacity: 0;
-}
-
-.menu-item:hover::before {
-    left: -15%;
-    /* đặt phần tử giả ở vị trí bên phải của phần tử cha */
-    background-color: var(--white-color);
-    /* đặt màu cho đường viền khi hover */
+  }
+  
+  .menu-item:hover::before {
+    left: -15%; /* đặt phần tử giả ở vị trí bên phải của phần tử cha */
+    background-color: var(--white-color); /* đặt màu cho đường viền khi hover */
     opacity: 1;
-}
+  }
 
 .menu-item>a {
     text-decoration: none;
@@ -564,7 +552,6 @@ span.header__search-heart-lable {
     /* border: 1px solid var(--boder-color); */
     padding-bottom: 10px;
     position: relative;
-    height: 100%;
 }
 
 .sale-wrapper {
@@ -595,47 +582,15 @@ span.header__search-heart-lable {
 
 .product-image {
     width: 100%;
-    object-fit: cover;
-    overflow: hidden;
-    transform-origin: center;
-    transition: transform 0.5s ease;
-
-}
-
-.product-image:hover {
-    cursor: pointer;
-    /* transform: rotate(360deg); */
-    animation: shake linear 1s infinite;
 }
 
 
 .product-image-wrap {
     position: relative;
+    object-fit: cover;
     overflow: hidden;
-
-}
-
-/* shake */
-@keyframes shake {
-    0% {
-        transform: translate(0, 0);
-    }
-
-    25% {
-        transform: translate(0, 15px);
-    }
-
-    50% {
-        transform: translate(15px, 0);
-    }
-
-    75% {
-        transform: translate(0, -15px);
-    }
-
-    100% {
-        transform: translate(-15px, 0);
-    }
+    transition: transform ease-in 0.2s;
+    will-change: transform;
 }
 
 .product-image-wrap:hover .product-icon {
@@ -643,7 +598,10 @@ span.header__search-heart-lable {
     transform: translate(4px);
 }
 
-.product-image-wrap:hover {}
+.product-image-wrap:hover {
+    cursor: pointer;
+    transform: translateX(5px);
+}
 
 .product-image-wrap-link {
     text-decoration: none;
@@ -700,7 +658,7 @@ span.header__search-heart-lable {
 
 .product-title {
     text-align: center;
-    font-size: 1.8em;
+    font-size: 2em;
     margin-bottom: 6px;
 }
 
@@ -818,7 +776,7 @@ span.header__search-heart-lable {
     padding: 16px;
     border: 1px solid var(--boder-color);
     margin-top: 24px;
-    height: 100%;
+
 }
 
 .Featured-categories-img {
@@ -865,28 +823,8 @@ span.header__search-heart-lable {
 
 .Featured-categories-link-last {
     color: var(--primary-color);
-    /* border-bottom: 1px solid transparent;
-    transition: border-bottom 0.5s ease-in-out; */
-    position: relative;
-}
-.Featured-categories-link-last::before {
-    content: "";
-    position: absolute;
-    left: -50%;
-    bottom: 0;
-    width: 100%;
-    height: 2px;
-    background-color: transparent;
-    transition: all 0.3s ease-in-out;
-    opacity: 0;
-}
-
-.Featured-categories-link-last:hover::before {
-    left: 0;
-    /* đặt phần tử giả ở vị trí bên phải của phần tử cha */
-    background-color: var(--primary-color);
-    /* đặt màu cho đường viền khi hover */
-    opacity: 1;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s ease-in-out;
 }
 
 .Featured-categories-link-last:hover {
@@ -1033,29 +971,11 @@ span.header__search-heart-lable {
     text-decoration: none;
     color: var(--primary-color);
     margin-top: 8px;
-    position: relative;
-    padding: 4px 0;
-}
-.latest-continue::before {
-    content: "";
-    position: absolute;
-    left: -50%;
-    bottom: 0;
-    width: 100%;
-    height: 2px;
-    background-color: transparent;
-    transition: all 0.3s ease-in-out;
-    opacity: 0;
 }
 
-.latest-continue:hover::before {
-    left: 0;
-    /* đặt phần tử giả ở vị trí bên phải của phần tử cha */
-    background-color: var(--primary-color);
-    /* đặt màu cho đường viền khi hover */
-    opacity: 1;
+.latest-continue:hover {
+    border-bottom: 1px solid var(--primary-color);
 }
-
 
 /* logo - item */
 .cover {
@@ -1366,6 +1286,9 @@ span.header__search-heart-lable {
     /* padding-top: 4px; */
 
 }
+
+.ticky-purchase-text:hover {}
+
 
 @keyframes marquee {
     0% {
